@@ -2,20 +2,34 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/styles.css">
-  <script src="js/script.js"></script>
-  <title>Título de la página</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./CSS/styles.css" />
+
+  <link rel="icon" href="./img/favicon.ico" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloock&display=swap"
+    rel="stylesheet"
+  />
+  <title>X-treme Hardware</title>
 </head>
 
 <body>
   <div class="maqueta">
     <header>
       <nav>
-        <h1>LOGO</h1>
-        <ul>
+        <!--  <button onclick="cerrarNav()" class="btnMenu">Menu</button> -->
+        <img class="logo" src="img/xtreme.png" alt="logo xtreme" />
+
+        <ul id="miNav">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
@@ -24,76 +38,86 @@
       </nav>
     </header>
 
-    <main class="container">
-      <div class="formulario">
-        <h1>Contactanos</h1>
-        <form class="styleForm" action="" method="POST" id="contactForm">
-          <fieldset>
-            <div class="row">
-              <div class="col-25">
-                <label for="nombre">Nombre:</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="nombre" id="nombre" required>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="apellido">Apellido:</label>
-              </div>
-              <div class="col-75">
-                <input type="text" name="apellido" id="apellido">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="correo">E-mail:</label>
-              </div>
-              <div class="col-75">
-                <input type="email" name="correo" id="correo" required>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-25">
-                <label for="telefono">Teléfono:</label>
-              </div>
-              <div class="col-75">
-                <input type="tel" name="telefono" id="telefono">
-              </div>
-            </div>
-            <div class="consulta">
-              <div class="">
-                <textarea name="consulta" id="consulta" placeholder="Déjenos aquí su consulta." required></textarea>
-              </div>
-            </div>
+    <main>
+      <section class="container-main">
+        <div class="formulario">
+          <h1>Contactanos</h1>
 
-            <div class="btnForm">
-              <input class="btn" type="submit" value="Enviar">
-              <input class="btn" type="reset" value="Borrar">
-            </div>
-          </fieldset>
-        </form>
-      </div>
+          <form action="" id="formulario" class="styleForm">
+            <fieldset>
+              <div class="row">
+                <div class="col-25">
+                  <label for="nombreF">Nombre:</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="nombreF" id="nombreF" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="apellido">Apellido:</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" name="Apellido" id="apellido" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="correo">E-mail:</label>
+                </div>
+                <div class="col-75">
+                  <input type="email" name="correo" id="correo" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="telefono">Telefono:</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" name="telefono" id="telefono" required />
+                </div>
+              </div>
+              <div class="consulta">
+                <div class="">
+                  <textarea
+                    name="consulta"
+                    id="consulta"
+                    placeholder="Déjenos aqui su consulta."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="btnForm">
+                <input class="btn" type="submit" value="Enviar" />
+                <input class="btn" type="reset" value="Borrar" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-      <div class="footer">
+      <div class="pie">
         <div class="company-info">
-          <p>NOMBRE DE LA EMPRESA | DIRECCIÓN DE LA EMPRESA | TELÉFONO: 123-456-7890 |
-            CORREO ELECTRÓNICO: info@empresa.com | &copy; 2023 NOMBRE DE LA EMPRESA. |
-            Todos los derechos reservados.</p>
+          <p>
+            X-TREME Harware | Av. 9 de Julio 1234 | TELÉFONO: 123-456-7890 |
+            CORREO ELECTRÓNICO: info@x-treme.com | &copy; 2023 X-TREME Harware
+            | Todos los derechos reservados.
+          </p>
         </div>
         <div class="redes">
-          <a href="#"><img src="ico/facebook.svg" alt="facebook"></a>
-          <a href="#"><img src="ico/whatsapp-icon.svg" alt="whatsapp"></a>
-          <a href="#"><img src="ico/instagram.svg" alt="instagram"></a>
-          <a href="#"><img src="ico/twitter.svg" alt="twitter"></a>
+          <a href="#"><img src="ico/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img src="ico/whatsapp-icon.svg" alt="whatsapp" /></a>
+          <a href="#"><img src="ico/instagram.svg" alt="instagram" /></a>
+          <a href="#"><img src="ico/twitter.svg" alt="twitter" /></a>
         </div>
       </div>
     </footer>
-  </div>
 
-  <script src="contacto.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
 </body>
 
 </html>

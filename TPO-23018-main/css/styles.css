@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Verdana';
 }
 html, body {
     height: 100%;
@@ -14,11 +15,11 @@ html, body {
         min-height: 100vh;
       }
 .box {
-    position: relative;
+    /*position: relative;*/
     justify-content: center;
     width: 100%;
     height: auto;
-    border: 2px solid black;
+   /* border: 2px solid black;*/
     opacity: 90%;
 }
 
@@ -35,6 +36,23 @@ html, body {
 
 .subtitulo {
     color: white;
+    /*margin: 40px;*/
+    font-size: medium;
+    top: 100px;
+    z-index: 20;
+}
+
+
+table{
+    color: white;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 100px;
+}
+
+td{
+    padding: 3%;
 }
 
 .sub-prod {
@@ -46,14 +64,15 @@ html, body {
 
 body {
     background-color: black;
-    background-repeat: no-repeat;
+  
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
 
 main {
-    flex: 1;
+    height: 90%;
+    /*flex: 1;*/
 }
 
 nav {
@@ -109,12 +128,22 @@ nav a:hover {
     transition-duration: 0.5s;
 }
 
-footer {
-    padding: 10px;
-    background-color: rgb(0, 170, 255, 30%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.pie {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px double rgb(0, 170, 255);
+    font-family: verdana;
+    background-color: rgb(0, 170, 255 ,30%);
+    display: grid;
+    align-content: end;
+    grid-template-columns: 8fr 1fr;
 }
 
 
@@ -127,6 +156,9 @@ footer {
     color: whitesmoke;
     display: flex;
     gap: 5px;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
 }
 
 .container-main {
@@ -136,10 +168,11 @@ footer {
     justify-items: center;
 }
 
+
 .slider-frame {
     width: 70%;
     height: auto;
-    margin: 50px auto 0;
+    margin: 40px auto 0;
     overflow: hidden;
     left: 30px;
     top: 30px;
@@ -160,6 +193,19 @@ footer {
 
 .slider-frame img {
     width: 100%;
+}
+
+.iframe{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: larger;
+    color: white;
+}
+
+iframe{
+    margin: 50px;
 }
 
 @keyframes slide {
@@ -184,8 +230,8 @@ footer {
 .formulario {
     color: white;
     display: grid;
-    width: 90%;
-    margin-top: 20px;
+    width: 50%;
+    margin-top: 10px;
 }
 
 .styleForm {
@@ -197,19 +243,17 @@ footer {
     font-family: verdana;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 50px;
+    
 }
 
+/*
 .contacto {
     z-index: 9999;
     cursor: pointer;
 }
+*/
 
-.row {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 2fr;
-}
 
 .col-25 {
     margin-top: 6px;
@@ -230,9 +274,9 @@ textarea {
 }
 
 .row::after {
-    content: "";
+    /*content: "";*/
     display: table;
-    clear: both;
+  /*  clear: both;*/
 }
 
 .row {
@@ -242,6 +286,7 @@ textarea {
 
 textarea {
     resize: vertical;
+    height: 150px;
 }
 
 fieldset {
@@ -293,7 +338,7 @@ fieldset {
 
 .card-prod {
     color: grey;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .img-card {
@@ -305,24 +350,68 @@ fieldset {
     text-align: center;
     cursor: pointer;
     width: 50%;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     transition-duration: 0.4s;
     cursor: pointer;
     background-color: rgb(187, 40, 40);
     border: 2px solid white;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .card button:hover {
     opacity: 0.7;
 }
 
+table{
+    display: flex;
+    justify-content: center;
+}
+
+/*********** ESTILOS EN API ***************************/
+
+.contenedor {
+    width: 60%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family:Arial;
+    font-size: large;
+    color: white;
+}
+
+#foto{
+    border-radius: 50%;
+    width: 200px;
+    margin: 2%;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+button{
+    border: none;
+    background: linear-gradient(to right, rgb(38, 197, 131), rgb(7, 94, 224));
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease 400ms;
+}
+
+    
+
+
+
+
+
 /************ puntos de corte *********************************/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   
     nav {
         display: flex;
         flex-direction: column;
@@ -385,7 +474,6 @@ fieldset {
 
 /* Estilos para dispositivos de pantalla mediana */
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  
     .container-productos {
         grid-template-columns: 1fr 1fr;
     }
@@ -398,7 +486,6 @@ fieldset {
 
 /* Estilos para dispositivos de pantalla grande */
 @media only screen and (min-width: 993px) {
-  
     .container-productos {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -408,3 +495,13 @@ fieldset {
         margin-bottom: 40px;
     }
 }
+
+/*.container-main {
+    position: relative;
+    z-index: 1;
+  }
+  */
+  footer {
+    position: relative;
+    z-index: 0;
+  }

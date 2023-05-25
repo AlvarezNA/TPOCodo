@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>Titulo de la página</title>
+    
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="js/script.js"></script>
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+    <title>X-treme Hardware</title>
 </head>
 
 <body>
     <div class="maqueta">
         <header>
             <nav>
-                <h1>LOGO</h1>
+                <img class="logo" src="img\xtreme.png" alt="">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="productos.html">Productos</a></li>
@@ -26,38 +33,76 @@
         <main>
             <section>
                 <article>
-                    <h2 class="subtitulo">About Us</h2>
+                    <h1 class="sub-prod">SOBRE NOSOTROS</h1>
                     <p class="subtitulo">Somos un grupo de jóvenes apasionados por la tecnología y los ordenadores. 
-                     Decidimos abrir nuestra propia tienda de artículos informáticos para compartir nuestro conocimiento y amor por la tecnología.
-                  Nos esforzamos por brindar una experiencia única y personalizada a nuestros clientes, ofreciendo asesoramiento experto y soluciones a medida.
-                    Además, organizamos eventos y talleres gratuitos para compartir nuestro conocimiento con la comunidad tecnológica. 
-                      Valoramos la transparencia, la honestidad y la satisfacción del cliente en todo lo que hacemos.
-                      Nuestro objetivo es hacer de la informática algo accesible y emocionante para todos.
-                        </p>
+                        Decidimos abrir nuestra propia tienda de artículos informáticos para compartir nuestro conocimiento y amor por la tecnología.
+                        Nos esforzamos por brindar una experiencia única y personalizada a nuestros clientes, ofreciendo asesoramiento experto y soluciones a medida.
+                        Además, organizamos eventos y talleres gratuitos para compartir nuestro conocimiento con la comunidad tecnológica. 
+                        Valoramos la transparencia, la honestidad y la satisfacción del cliente en todo lo que hacemos.
+                        Nuestro objetivo es hacer de la informática algo accesible y emocionante para todos.
+                    </p>
+                
+                    
+                </article>
 
-                    <p class="subtitulo">.</p>
+                <article>
+                    <table>
+                        <tr>
+                            <td> <img src="ico\atencion-al-cliente.png" alt="" width="20%"> <h4> SERVICIO AL CLIENTE </h4> <br> Brindamos la mayor calidad de servicio </td>
+                            <td> <img src="ico\administracion.png" alt="" width="20%"> <h4> INNOVACION </h4> <br> Buscamos constantemente ser pioneros en el mundo de la tecnologia </td>
+                        </tr>
+                        
+                        <tr> 
+                            <td> <img src="ico\cadena-de-bloques.png" alt="" width="20%"> <h4> DISTRIBUIDORES </h4> <br> Desarrollamos continuamente la red de distribuidores </td>
+                            <td> <img src="ico\mejora-continua.png" alt="" width="20%"> <h4> MEJORA CONTINUA </h4> <br> Trabajamos con dinámica, auto exigencia y en búsqueda de la excelencia </td>
+                        </tr>
+
+                        <tr>
+                            <td> <img src="ico\inventario.png" alt="" width="20%"> <h4> INVENTARIO </h4> <br> Disponemos de una amplia en la gama de productos nacionales e internacionales</td>
+                            <td> <img src="ico\acuerdo.png" alt="" width="20%"> <h4> ATENCION </h4> <br> Nos distingue el valor humano en el trato tanto con clientes, proveedores y empleados</td> 
+                        </tr>
+                    </table>
+                    
+                    
+                </article>
+
+                <article>
+                    
+                    <div class="contenedor">
+                        <h1>EMPLEADO DEL MES</h1>
+                        <p>En X-TREME Hardware valoramos el esfuerzo en bridar la mayor atencion y servcio al cliente. Por eso reconocemos a quienes han superado nuestras expectativas. </p>
+                        <img src="" alt="" id="foto">
+                        <h3> Felicidades! <span id="nombre"></span></h3>
+                    </div>
+
+                    <div class="boton">
+                        <button id="boton"> ACTUALIZAR </button>
+                    </div>
+
                 </article>
             </section>
         </main>
-       
-        <footer>
-            <div class="pie">
-                <div class="company-info">
-                    <h3>NOMBRE DE LA EMPRESA</h3>
-                    <p>DIRECCIÓN DE LA EMPRESA</p>
-                    <p>TELÉFONO: 123-456-7890</p>
-                    <p>CORREO ELECTRÓNICO: info@empresa.com</p>
-                    <p>&copy; 2023 NOMBRE DE LA EMPRESA. Todos los derechos reservados.</p>
-                </div>
-                <div class="redes">
-                    <a href="#"><img src="ico/facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="ico/whatsapp.png" alt="whatsapp"></a>
-                    <a href="#"><img src="ico/instagram.png" alt="instagram"></a>
-                    <a href="#"><img src="ico/twitter.png" alt="twitter"></a>
-                </div>
-            </div>
-        </footer>
+
     </div>
+
+    <footer>
+        <div class="pie">
+
+            <div class="company-info">
+                <p>X-TREME Harware | Av. 9 de Julio 1234 | TELÉFONO: 123-456-7890 |
+                CORREO ELECTRÓNICO: info@x-treme.com | &copy; 2023 X-TREME Harware | 
+                Todos los derechos reservados.</p>
+            </div>
+            <div class="redes">
+                <a href="#"><img src="ico/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="ico/whatsapp-icon.svg" alt="whatsapp"></a>
+                <a href="#"><img src="ico/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="ico/twitter.svg" alt="twitter"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js\app.js"></script>
+    
 </body>
 
 </html>
